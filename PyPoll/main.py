@@ -13,7 +13,7 @@ import os
 #Insert module for reading CSV files
 import csv
 
-csvpath = os.path.join('C:/Users/Dell/Downloads/GITHUB/Python-Challenge/Python-Challenge/PyPoll/Resources/election_data.csv')
+csvpath = os.path.join('C:/Users/Dell/Downloads/Gitrepo/Python-Challenge/PyPoll/Resources/election_data.csv')
 
 
 # Set total votes to 0 for counter
@@ -28,10 +28,10 @@ doane_votes = 0
 
 
 #Confirm CSV file pathway
-with open(csvpath) as text:
+with open(csvpath) as textfile:
 
     # Confirm delimiter and the variable that holds contents
-    csvreader = csv.reader(text, delimiter=',')
+    csvreader = csv.reader(textfile, delimiter=',')
 
     # Read the header row
     csv_header = next(csvreader)
@@ -84,7 +84,7 @@ with open(csvpath) as text:
     print("\n--------------------------\n")
 
 # # Specify the file to write to
-txtfile_output = os.path.join('C:/Users/Dell/Downloads/Gitrepo/Python-Challenge/PyPoll/Resources/election_analysis.txt')
+txtfile_output = os.path.join('C:/Users/Dell/Downloads/Gitrepo/Python-Challenge/PyPoll/Analysis/election_analysis.txt')
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(txtfile_output, 'w') as txtfile_output:

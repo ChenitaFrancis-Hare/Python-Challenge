@@ -11,7 +11,7 @@ import os
 # Import csv module to interact(read/write) with CSV files
 import csv
 
-csvpath = os.path.join('C:/Users/Dell/Downloads/GITHUB/Python-Challenge/Python-Challenge/PyBank/Resources/budget_data.csv')
+csvpath = os.path.join('C:/Users/Dell/Downloads/Gitrepo/Python-Challenge/PyBank/Resources/budget_data.csv')
 
 # Create empty lists to store data
 total_months = []
@@ -65,7 +65,7 @@ print(f"Greatest Decrease in Profits: {greatest_month_decrease} (${(str(greatest
 
 # Export analysis results to text file
 # # Specify the file to write to
-txtfile_output = os.path.join('C:/Users/Dell/Downloads/GITHUB/Python-Challenge/Python-Challenge/PyBank/Resources/financial_analysis.txt')
+txtfile_output = os.path.join('C:/Users/Dell/Downloads/Gitrepo/Python-Challenge/PyBank/Analysis/financial_analysis.txt')
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(txtfile_output, 'w') as txtfile_output:
