@@ -63,7 +63,7 @@ with open(csvpath) as text:
 
         
 
-    #5. The winner of the election based on popular vote
+    #5. Tally dictionary to identify the winner of the election based on percentage of votes
     tally = {"Charles Casper Stockham": (perc_votes_stockham), "Diana Degette": (perc_votes_degette), "Raymon Anthony Doane":(perc_votes_doane)}
     # Find maximum key in the dictionary
     winner =  max(tally, key=tally.get)
